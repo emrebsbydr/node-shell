@@ -1,11 +1,13 @@
+require("./pwd");
+require("./ls");
 process.stdout.write('prompt > ');
 
-process.stdin.on('data',(pwd)=>{
-  const a = process.cwd()
-  console.log(a)
-  process.stdout.write('You  path  : '+a);
-  process.stdout.write('\nprompt > ');
-});
+// process.stdin.on('data',(pwd)=>{
+//   const a = process.cwd();
+//   console.log(a);
+//   process.stdout.write('You  path  : '+a);
+//   process.stdout.write('\nprompt > ');
+// });
 
 //--========
 process.stdin.on('data',(data)=>{
