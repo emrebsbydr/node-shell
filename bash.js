@@ -1,5 +1,6 @@
 require("./pwd");
 require("./ls");
+require("./cat");
 process.stdout.write('prompt > ');
 
 // process.stdin.on('data',(pwd)=>{
