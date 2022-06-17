@@ -1,16 +1,9 @@
 require("./pwd");
 require("./ls");
-require("./cat");
+let {cat} = require("./cat")
+console.log('cat function ::', cat)
 process.stdout.write('prompt > ');
 
-// process.stdin.on('data',(pwd)=>{
-//   const a = process.cwd();
-//   console.log(a);
-//   process.stdout.write('You  path  : '+a);
-//   process.stdout.write('\nprompt > ');
-// });
-
-//--========
 process.stdin.on('data',(data)=>{
   const cmd = data.toString().trim();
 
@@ -19,7 +12,6 @@ process.stdin.on('data',(data)=>{
 });
 
 // import {cwd} from 'node:process';
-
 // console.log(`current directory :${cwd()}`)
 // console.log(process.cwd())
 // console.log(pwd)
